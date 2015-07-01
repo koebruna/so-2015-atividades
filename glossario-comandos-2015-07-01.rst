@@ -121,5 +121,5 @@ whoami
   Mostra na tela o nome do usário logado. Digite por exemplo: whoami.
 
 write
-   
+  Permite enviar mensagens para outros usuários. Digite por exemplo: 
 
