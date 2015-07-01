@@ -9,47 +9,47 @@ Glossário de comandos
 :Data: 01/07/2015
 
 cat
-  Mostra na tela o conteúdo do arquivo. Digitando por exemplo: cat .bash_history. Nesse caso, será devolvido o histórico de comandos.
+  Mostra na tela o conteúdo do arquivo. Digite: cat .bash_history + ENTER. Nesse caso, será devolvido o histórico de comandos.
 
 
 cd
-  Muda o diretório para o area inicial. Digitando por exemplo: cd. 
+  Muda o diretório para o area inicial. Digite: cd + ENTER. 
 
 
 cowsay
-  Descrição do comando
+  É um programa que permite enviar mensagens de uma forma mais lúdica. Digite: cowsay "Uma mensagem qualquer" + ENTER. Para direcionar uma mensagem para outro usuário, digite: cowsay -f kiss "uma mensagem Qualuer" | write nomedocolega + ENTER. Note que é utilizado o comando cowsay conjunto ao write (veja a funcionalidade mais abaixo), e que o trecho "-f kiss" permite alterar a imagem em ASCII, normalmente uma vaca, para a imagem de um beijo.
 
 
 echo
-  Descrição do comando
+  É um comando usado normalmente em scripts que permite exibir mensagens na tela ou arquivo, utlizando alguns argumentos. Digite: echo $USER + ENTER. O comando anterior exibe na tela o nome do usário.
 
 
 env
-  Mostra na tela as variáveis de ambiente dispostas. Digitando por exemplo: env. 
+  Mostra na tela as variáveis de ambiente dispostas. Digite: env + ENTER. 
 
 
 exit
-  Descrição do comando
+  Comando reponsável por terminar a sessão. Digite: exit + ENTER.
 
 
 help
-  Descrição do comando
+  Exibe na tela os comando internos disponíveis. Digite: help. Caso queira saber informações sobre qualquer comando e as suas funcionalidades, digite: help + comando + ENTER.
 
 
 HISTTIMEFORMAT="%d/%m/%y"
-  Permite que seja adicionado informações a lista do histórico de comandos, como a data de execução dos camandos. Digite por exemplo: HISTTIMEFORMAT="%d/%m/%y".
+  Permite que seja adicionado informações a lista do histórico de comandos, como a data de execução dos camandos. Digite: HISTTIMEFORMAT="%d/%m/%y" + ENTER.
 
 
 hostname
-  Mostra na tela o nome da máquina. Digite por exemplo: hostname.
+  Mostra na tela o nome da máquina. Digite: hostname + ENTER.
 
 
 ifconfig
-  Descrição do comando
+  Exibe o ip da máquina, entre outras informações relacionada. Digite: ifconfig + ENTER.
 
 
 last
-  Descrição do comando
+  Exibe informações referentes aos últimos logins efetuados. Digite: last + ENTER.
 
 
 lastb
@@ -57,39 +57,39 @@ lastb
 
 
 ls
-  Descrição do comando
+  Comando responsável por listar os arquivos do ficheiro atual. Digite: ls + ENTER.
 
 
 mkdir
-  Possui a funcionalidade de criar arquivos. Digite por exemplo: mkdir.
+  Possui a funcionalidade de criar arquivos. Digite: mkdir + ENTER.
 
 
-nome="fulano
-  Descrição do comando
+nome="fulano"
+  Permite a atribuição do valor 'fulano' a variável nome, dessa forma, a variável pode ser utilizada para realizar alguma rotina interna. Digite nome="fulano" + ENTER.
 
 
 passswd
-  Permite que seja alterado a senha de logon. Digite por exemplo: mkdir.
+  Permite que seja alterado a senha de logon. Digite: passwd + ENTER.
 
 
 pwd
-  Mostra na tela o diretório atual. Digite por exemplo: pwd.
+  Mostra na tela o diretório atual. Digite: pwd + ENTER.
 
 
 set
-  Descrição do comando
+  Permite alterar variáveis e funções.
 
 
 tree
-  Descrição do comando
+  Exibir os diretórios e seus respectivos arquivos e pastas. Digite: tree + ENTER.
 
 
 tty
-  Descrição do comando
+  Exibi o terminal de controle da máquina. Digite: tty + ENTER.
 
 
 vim
-  Devolve um editor de text. Digite por exemplo: vim.
+  Devolve um editor de text. Digite por exemplo: vim + ENTER.
 
 
 wait
@@ -111,15 +111,16 @@ while
 	do
 		echo "Enchendo o saco" | write nomedoamiguinho
 	done
+	+ ENTER
   Dessa forma a mensagem "Enchendo o saco" será enviada para o nome do colega, enquanto for verdadeiro (true).
 
 who
-  Mostra na tela o nome de todos os usuários logados na rede. Digite por exemplo: who.
+  Mostra na tela o nome de todos os usuários logados na rede. Digite por exemplo: who + ENTER.
 
 
 whoami
-  Mostra na tela o nome do usário logado. Digite por exemplo: whoami.
+  Mostra na tela o nome do usário logado. Digite por exemplo: whoami + ENTER.
 
 write
-  Permite enviar mensagens para outros usuários. Digite por exemplo: 
+  Permite enviar mensagens para outros usuários. Digite por exemplo: "Mensagem" | write nomedousuario + ENTER. 
 
