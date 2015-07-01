@@ -4,16 +4,16 @@ Glossário de comandos
 
 :Disciplina: Fundamentos de Sistemas Operacionais
 :Professor: Jurandy Soares
-:Nome: Seu nome completo
-:Matrícula: Sua matrícula
+:Nome: Paulo de Lima Xavier
+:Matrícula: 20121144010419
 :Data: 01/07/2015
 
 cat
-  Descrição do comando
+  Mostra na tela o conteúdo do arquivo. Digitando por exemplo: cat .bash_history. Nesse caso, será devolvido o histórico de comandos.
 
 
 cd
-  Descrição do comando
+  Muda o diretório para o area inicial. Digitando por exemplo: cd. 
 
 
 cowsay
@@ -25,7 +25,7 @@ echo
 
 
 env
-  Descrição do comando
+  Mostra na tela as variáveis de ambiente dispostas. Digitando por exemplo: env. 
 
 
 exit
@@ -37,11 +37,11 @@ help
 
 
 HISTTIMEFORMAT="%d/%m/%y"
-  Descrição do comando
+  Permite que seja adicionado informações a lista do histórico de comandos, como a data de execução dos camandos. Digite por exemplo: HISTTIMEFORMAT="%d/%m/%y".
 
 
 hostname
-  Descrição do comando
+  Mostra na tela o nome da máquina. Digite por exemplo: hostname.
 
 
 ifconfig
@@ -61,7 +61,7 @@ ls
 
 
 mkdir
-  Descrição do comando
+  Possui a funcionalidade de criar arquivos. Digite por exemplo: mkdir.
 
 
 nome="fulano
@@ -69,11 +69,11 @@ nome="fulano
 
 
 passswd
-  Descrição do comando
+  Permite que seja alterado a senha de logon. Digite por exemplo: mkdir.
 
 
 pwd
-  Descrição do comando
+  Mostra na tela o diretório atual. Digite por exemplo: pwd.
 
 
 set
@@ -89,7 +89,7 @@ tty
 
 
 vim
-  Descrição do comando
+  Devolve um editor de text. Digite por exemplo: vim.
 
 
 wait
@@ -105,16 +105,21 @@ which
 
 
 while
-  Descrição do comando
-
+  Um laço de condição que serve para criar scripts. Digite por exemplo:
+  
+  while true;
+	do
+		echo "Enchendo o saco" | write nomedoamiguinho
+	done
+  Dessa forma a mensagem "Enchendo o saco" será enviada para o nome do colega, enquanto for verdadeiro (true).
 
 who
-  Descrição do comando
+  Mostra na tela o nome de todos os usuários logados na rede. Digite por exemplo: who.
 
 
 whoami
-  Descrição do comando
+  Mostra na tela o nome do usário logado. Digite por exemplo: whoami.
 
 write
-  Descrição do comando
+   
 
