@@ -77,7 +77,7 @@ pwd
 
 
 set
-  Permite alterar variáveis e funções.
+  Permite alterar variáveis e funções. Digite: set PATH="/bin:/usr/bin:/usr/sbin:usr/local/bin" + ENTER. Nesse caso, o comando define a variável de ambiente PATH , de modo que o shell irá procurar por arquivos no /bin, /usr/bin, /usr/sbin e no /usr/local/bin, nessa ordem.
 
 
 tree
@@ -93,15 +93,15 @@ vim
 
 
 wait
-  Descrição do comando
+  
 
 
 wall
-  Descrição do comando
+  Permite o envio de mensagens para vários usários de uma única vez. Digite: sudo wall message.txt + ENTER.
 
 
 which
-  Descrição do comando
+  Permite encontrar o diretório de arquivos executáveis do sistema. Digite: sudo which -a echo + ENTER. Dessa forma, serão exibiddos todos os diretórios correspondentes ao argumento 'echo' com o auxílio do '-a'.
 
 
 while
