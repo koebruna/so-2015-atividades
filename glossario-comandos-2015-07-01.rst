@@ -16,6 +16,7 @@ cat
   O camando 'cat' possui a funcionalidade de importar dados de um arquivo para outro, digite: cat arquivo1 > arquivo2 + ENTER. Assim, o conteúdo do arquivo1 irá sobreescrever o conteúdo do arquivo2.
 
 
+
 cd
   Tem a funcionalidade de mudar o diretório para o area inicial, digite: cd + ENTER;
   
@@ -23,8 +24,11 @@ cd
   
   Caso o seu diretório atual seja a 'pasta2', por exemplo '$:~/pasta1/past2', e seja necessário voltar para a pasta anterior ('pasta1'), basta digitar: cd - + ENTER.   
 
+
+
 cowsay
   É um programa que permite enviar mensagens de uma forma mais lúdica, digite: cowsay "Uma mensagem qualquer" + ENTER. Já para direcionar uma mensagem para outro usuário, digite: cowsay -f kiss "uma mensagem Qualquer" | write nomedocolega + ENTER. Note que é utilizado o comando cowsay conjunto ao write (veja a funcionalidade mais abaixo), e que o trecho "-f kiss" permite alterar a imagem em ASCII, normalmente uma vaca, para a imagem de um beijo.
+
 
 
 echo
@@ -35,20 +39,24 @@ echo
   Podemos saber a quantidade de arquivos de um determinado diretório, basta digitar: echo * | wc -w + ENTER.
 
 
+
 env
   Mostra na tela as variáveis de ambiente dispostas, digite: env + ENTER;
   
   Para saber a quantidade de variáveis de ambiente, digite: env | wc -l + ENTER.
 
 
+
 exit
   Comando reponsável por terminar a sessão, digite: exit + ENTER.
+
 
 
 help
   Exibe na tela os comando internos disponíveis, digite: help + ENTER;
   
   Caso queira saber informações sobre um comando específico, digite: help + comando + ENTER.
+
 
 
 HISTTIMEFORMAT="%d/%m/%y"
@@ -62,8 +70,10 @@ HISTTIMEFORMAT="%d/%m/%y"
   
 
 
+
 hostname
   Mostra na tela o nome da máquina, digite: hostname + ENTER.
+
 
 
 ifconfig
@@ -72,12 +82,15 @@ ifconfig
   É possível desativar é ativar uma interface, digitando, respectivamente: ifconfig eth0 + down + ENTER e ifconfig + up + ENTER.
 
 
+
 last
   Exibe informações referentes aos últimos logins efetuados, digite: last + ENTER.
 
 
+
 lastb
   Descrição do comando
+
 
 
 ls
@@ -88,24 +101,30 @@ ls
   Para listar os arquivos/diretórios ordenamente em uma única coluna, digite: ls -F1 + ENTER.
 
 
+
 mkdir
   Possui a funcionalidade de criar arquivos, digite: mkdir + ENTER.
+
 
 
 nome="fulano"
   Permite a atribuição do valor 'fulano' a variável nome, dessa forma, a variável pode ser utilizada para realizar alguma rotina interna, digite nome="fulano" + ENTER.
 
 
+
 passswd
   Permite que seja alterado a senha de logon, a senha deve conter de 6 a 8 caracteres, possuir letras minúsculas, digitos de 0 a 9, e sinais de pontuação, digite: passwd + ENTER.
+
 
 
 pwd
   Devolve na tela o diretório atual, digite: pwd + ENTER.
 
 
+
 set
   Permite alterar variáveis e funções, digite: set PATH="/bin:/usr/bin:/usr/sbin:usr/local/bin" + ENTER. Nesse caso, o comando define a variável de ambiente PATH, de modo que o shell irá procurar por arquivos no /bin, /usr/bin, /usr/sbin e no /usr/local/bin, nessa ordem.
+
 
 
 tree
@@ -114,8 +133,10 @@ tree
   Para listar em forma de árvore os arquivos e suas respectivas permissões, digite: tree -p.
 
 
+
 tty
   Exibi o terminal de controle da máquina, digite: tty + ENTER.
+
 
 
 vim
@@ -132,6 +153,7 @@ vim
  Para sair do vim, digite: ESC + :q! + ENTER.
 
 
+
 wait
   
 
@@ -140,8 +162,10 @@ wall
   Permite o envio de mensagens para vários usários de uma única vez, digite: sudo wall message.txt + ENTER. Nesse caso, estamos enviando o conteúdo de um arquivo.
 
 
+
 which
   Permite encontrar o diretório de arquivos executáveis do sistema. Digite: sudo which -a echo + ENTER. Dessa forma, serão exibiddos todos os diretórios correspondentes ao argumento 'echo' com o auxílio do '-a'.
+
 
 
 while
@@ -156,12 +180,17 @@ while
  
   Dessa forma a mensagem será enviada para o nome do usuário, enquanto for verdadeiro (true).
 
+
+
 who
   Mostra na tela o nome de todos os usuários logados na rede. Digite por exemplo: who + ENTER.
 
 
+
 whoami
   Mostra na tela o nome do usário logado. Digite por exemplo: whoami + ENTER.
+
+
 
 write
   Permite enviar mensagens para outros usuários. Digite por exemplo: "Mensagem" | write nomedousuario + ENTER. 
