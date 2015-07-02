@@ -10,7 +10,9 @@ Glossário de comandos
 
 cat
   Com este comando é possível mostrar na tela o conteúdo do arquivo, digite: cat .bash_history + ENTER. Nesse caso, será devolvido o histórico de comandos;
+  
   Com este mesmo comando também é possível escrever em um arquivo, digite: cat > arquivo + ENTER. logo após, o prompt ficará oculto, e haverá um espaço para ser digitado o coteúdo desejado do arquivo. Para sair do modo edição digite: Ctrl + D;
+  
   O camando 'cat' possui a funcionalidade de importar dados de um arquivo para outro, digite: cat arquivo1 > arquivo2 + ENTER. Assim, o conteúdo do arquivo1 irá sobreescrever o conteúdo do arquivo2.
 
 
