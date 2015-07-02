@@ -172,11 +172,10 @@ while
   Um laço de condição que serve para criar scripts.
  
   Digite por exemplo:
-  	while true;
-		do
-			echo "Uma Mensagem qualquer" | write nomedousuario
-	done
-	+ ENTER
+  	while true; + ENTER
+		do + ENTER
+			echo "Uma Mensagem qualquer" | write nomedousuario + ENTER
+	done + ENTER
  
   Dessa forma a mensagem será enviada para o nome do usuário, enquanto for verdadeiro (true).
 
