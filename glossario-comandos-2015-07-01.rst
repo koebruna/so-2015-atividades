@@ -4,7 +4,7 @@ Glossário de comandos
 
 :Disciplina: Fundamentos de Sistemas Operacionais
 :Professor: Jurandy Soares
-:Nome: Paulo de Lima Xavier
+:Nome: Andre Luiz
 :Matrícula: 20121144010419
 :Data: 01/07/2015
 
