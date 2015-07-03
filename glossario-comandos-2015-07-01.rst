@@ -89,7 +89,7 @@ last
 
 
 lastb
-  Descrição do comando
+  Exibe uma lista de recentes tentativas de logins errados, digite: lastb + ENTER.
 
 
 
@@ -233,5 +233,69 @@ pstree
 
 gunzip
   Comando responsável por descompactar um arquivo, por exemplo, um diretório possui um arquivo compactado 'arquivo.txt.gz' para descompacta-lo, digite: gunzip arquivo.txt.gz + ENTER. Então, será criado um novo arquivo descompactado no diretório denominado: arquivo.txt.
+  
+  
+rm
+  Comando responsável por excluir um ou mais arquivos.
+  
+  Argumentos:
+  -d, --directory
+  Remova diretórios, mesmo que eles não estão vazias. Disponível apenas para um usuário privilegiado.
+
+  -f, --force
+  Remover arquivos protegidos contra gravação sem avisar.
+
+  --help
+  Imprimir uma mensagem de ajuda e depois sai.
+
+  -i, --interactive
+  Solicitar y (remover o arquivo) ou n (não remover o arquivo).
+
+  -no-preserve-root
+  Não trate raiz (/) especialmente. Este é o padrão.
+
+  --preserve-root
+  Não opere de forma recursiva na raiz (/).
+
+  -r, -R, --recursive
+  Se arquivo for um diretório, remover todo o diretório e todo o seu conteúdo, incluindo subdiretórios. Seja avisado: o uso desta opção pode ser perigoso.
+
+  -v, --verbose
+  O modo detalhado (imprimir o nome de cada arquivo antes de removê-lo).
+
+  --version
+  Informação sobre a versão e depois sai.
+
+  -
+  Marcar o fim de opções. Utilize esta opção quando você precisa fornecer um nome de arquivo que começa com -.
+  
+
+
+sort
+  Comando reponsável por organizar linhas de comandos de arquivos.
+  
+  Argumentos:
+  -d, --dictionary-order
+  Classificar em ordem dicionário.
+  
+  -n
+  Classificar em ordem aritmética.
+  
+  -g, --general-numeric-sort
+  Classificar em ordem numérica geral.
+  
+  -u, --unique
+  Linhas idênticas no arquivo de entrada aparecer apenas uma vez na saída.
+  
+  Exemplos
+
+  Listar os arquivos por número decrescente de linhas:
+  wc -l * | sort -r
+
+  Alfabetizar uma lista de palavras, remova duplicatas, e imprimir a freqüência de cada palavra:
+  sort -fd wordlist | uniq -c
+
+  Organizar o arquivo de senha numericamente pelo terceiro campo (ID do usuário):
+  sort -nk3,4 -t: /etc/passwd
   
 
