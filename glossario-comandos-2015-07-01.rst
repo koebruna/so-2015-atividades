@@ -4,8 +4,8 @@ Glossário de comandos
 
 :Disciplina: Fundamentos de Sistemas Operacionais
 :Professor: Jurandy Soares
-:Nome: Andre Luiz
-:Matrícula: 20121144010419
+:Nome: Bruna Costa
+:Matrícula: 20121144010451
 :Data: 01/07/2015
 
 cat
