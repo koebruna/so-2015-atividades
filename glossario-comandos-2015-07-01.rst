@@ -207,7 +207,7 @@ git
  
  
 ssh
-  É um programa que permite fazer login e executar comandos em uma máquina remoto. Para logar a uma máquina através de seu 'ip', por exemplo, digite: ssh seunome@ip.
+  É um programa que permite fazer login e executar comandos em uma máquina remoto. Para logar a uma máquina através de seu 'ip', por exemplo, digite: ssh seunome@ip + ENTER.
   
   
 type
