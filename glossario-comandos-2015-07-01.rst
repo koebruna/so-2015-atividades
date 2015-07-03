@@ -314,4 +314,23 @@ sort
   Organizar o arquivo de senha numericamente pelo terceiro campo (ID do usuário):
   sort -nk3,4 -t: /etc/passwd
   
+  
+awk
+  É um utilitário responsável por processar arquivos de texto. 
+  
+  Exemplos:
+  
+  Cria um arquivo com argumentos concatenados formato 'string + comando' a partir das informações de histórico armazenadas em outro arquivo.
+  
+  awk '{print "Comando: " $2}' historico.txt | sort -u > historico2.txt 
+  
+  Utlizia o mesmo princípio anterior, no entanto, adicionando títulos as colunas de cada argumento.
+  
+  awk 'BEGIN { printf "%-10s %s\n", "Name", "Number"
+
+  printf "%-10s %s\n", "----", "------" }
+
+  { printf "%-10s %s\n", $1, $2 }' historico.txt > historico2.txt
+  
+  
 
