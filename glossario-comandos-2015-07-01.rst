@@ -18,16 +18,16 @@ cat
 
 
 cd
-  Tem a funcionalidade de mudar o diretório para o area inicial, digite: cd + ENTER;
+  Tem a funcionalidade de mudar o diretório para a area inicial, digite: cd + ENTER;
   
-  Com o 'cd' também é possível acessar pastar, bas digitar: cd /pasta1 + ENTER ou cd /pasta1/pasta2/pasta3... + ENTER;
+  Com o 'cd' também é possível acessar pastas, basta digitar: cd /pasta1 + ENTER ou cd /pasta1/pasta2/pasta3... + ENTER;
   
   Caso o seu diretório atual seja a 'pasta2', por exemplo '$:~/pasta1/past2', e seja necessário voltar para a pasta anterior ('pasta1'), basta digitar: cd - + ENTER.   
 
 
 
 cowsay
-  É um programa que permite enviar mensagens de uma forma mais lúdica, digite: cowsay "Uma mensagem qualquer" + ENTER. Já para direcionar uma mensagem para outro usuário, digite: cowsay -f kiss "uma mensagem Qualquer" | write nomedocolega + ENTER. Note que é utilizado o comando cowsay conjunto ao write (veja a funcionalidade mais abaixo), e que o trecho "-f kiss" permite alterar a imagem em ASCII, normalmente uma vaca, para a imagem de um beijo.
+  É um programa que permite enviar mensagens de uma forma mais lúdica, digite: cowsay "Uma mensagem qualquer" + ENTER. Já para direcionar uma mensagem a outro usuário, digite: cowsay -f kiss "uma mensagem Qualquer" | write nomedocolega + ENTER. Note que é utilizado o comando cowsay conjunto ao write (veja a funcionalidade mais abaixo), e que o trecho "-f kiss" permite alterar a imagem em ASCII, normalmente uma vaca, para a imagem de um beijo.
 
 
 
@@ -55,7 +55,7 @@ exit
 help
   Exibe na tela os comando internos disponíveis, digite: help + ENTER;
   
-  Caso queira saber informações sobre um comando específico, digite: help + comando + ENTER.
+  Caso queira saber informações sobre um comando específico, digite: help comando + ENTER.
 
 
 
@@ -77,7 +77,7 @@ hostname
 
 
 ifconfig
-  Exibe as configurações de rede e de um adaptador Ethernet, detalhando as interfaces ativas no momento. Digite: ifconfig + ENTER;
+  Exibe as configurações de rede de um adaptador Ethernet, detalhando as interfaces ativas no momento. Digite: ifconfig + ENTER;
  
   É possível desativar é ativar uma interface, digitando, respectivamente: ifconfig eth0 down + ENTER e ifconfig up + ENTER.
 
@@ -97,14 +97,14 @@ ls
   Comando responsável por listar os arquivos/diretórios do ficheiro atual, digite: ls + ENTER.
   Para visualizar arquivos ocultus em um diretório, digite: ls -a + ENTER;
  
-  Para visualizar arquivo ou diretório, tamanho, data e horário de modificação, nome do arquivo, entre outras informações, digite: ls -l + ENTER;
+  Para visualizar arquivos ou diretórios, tamanho, data e horário de modificação, nome do arquivo, entre outras informações, digite: ls -l + ENTER;
  
   Para listar os arquivos/diretórios ordenamente em uma única coluna, digite: ls -F1 + ENTER.
 
 
 
 mkdir
-  Possui a funcionalidade de criar arquivos, digite: mkdir + ENTER.
+  Possui a funcionalidade de criar diretórios, digite: mkdir nomepasta + ENTER.
 
 
 
@@ -141,17 +141,17 @@ tty
 
 
 vim
- É um programa para editar texto, para entrar no editor, digite: vim + ENTER;
+ É um programa para editar texto, para entrar no editor digite: vim + ENTER;
  
  Caso queira editar um arquivo do seu ficheiro, digite: vim arquivo + ENTER;
  
  Para começar a editar o arquivo, digite: a;
  
- Para salvar as alterações, digite: ESC + :x + ENTER;
+ Para salvar as alterações, digite: ESC :x + ENTER;
  
- Para desfazer as alterações, digite: ESC + :u + ENTER;
+ Para desfazer as alterações, digite: ESC :u + ENTER;
  
- Para sair do vim, digite: ESC + :q! + ENTER.
+ Para sair do vim, digite: ESC :q! + ENTER.
 
 
 
@@ -160,7 +160,7 @@ wait
 
 
 wall
-  Permite o envio de mensagens para vários usários de uma única vez, digite: sudo wall message.txt + ENTER. Nesse caso, estamos enviando o conteúdo de um arquivo.
+  Permite o envio de mensagens para vários usários de uma única vez, digite: sudo wall message.txt + ENTER. Nesse caso, estamos enviando o conteúdo de um arquivo para todos os usuários de uma mesma rede, por exemplo.
 
 
 
@@ -173,10 +173,7 @@ while
   Um laço de condição que serve para criar scripts.
  
   Digite por exemplo:
-  	while true; + ENTER
-		do + ENTER
-			echo "Uma Mensagem qualquer" | write nomedousuario + ENTER
-	done + ENTER
+  	while true; do echo "msh" | write nomeusuario; done + ENTER
  
   Dessa forma a mensagem será enviada para o nome do usuário, enquanto for verdadeiro (true).
 
@@ -207,7 +204,7 @@ git
  
  
 ssh
-  É um programa que permite fazer login e executar comandos em uma máquina remoto. Para logar a uma máquina através de seu 'ip', por exemplo, digite: ssh seunome@ip + ENTER.
+  É um programa que permite realizar logon e executar comandos em uma máquina remota. Para logar a uma máquina através de seu 'ip', por exemplo, digite: ssh seunome@ip + ENTER.
   
   
 type
@@ -215,7 +212,7 @@ type
   
   
 cp
-  Comando responsávelo por arquivos e diretórios. Por exemplo, você possui um arquivo chamado 'imagem1.jpg' e deseja duplicalo, basta digitar: cp imagem1.jpg imagem2.jpg + ENTER. Assim, será criada uma cópia chamada 'imagem2.jpg'.
+  Comando responsável por copiar arquivos e diretórios. Por exemplo, você possui um arquivo chamado 'imagem1.jpg' e deseja duplicalo, basta digitar: cp imagem1.jpg imagem2.jpg + ENTER. Assim, será criada uma cópia chamada 'imagem2.jpg'.
   Caso seja necessário duplicar uma arquivo para diretórios diferentes, digire: cp ~/Web/Historico/historico.txt ~/Web + ENTER. Nesse caso, o arquivo 'historico.txt', que está no diretório '/Web/Historico', será copiado para o diretório '/Web'.
   Também é possível copiar, por exemplo, vários arquivos de uma mesma extensão, digite: cp ~/pictures/picture-*.jpg ~/picture-backup + ENTER. Nesse caso, todos os arquivos 'picture-' de extensão '.jpg' serão copiados de '/pictures' para '/picture-backup'.
   
@@ -232,7 +229,7 @@ pstree
 
 
 gunzip
-  Comando responsável por descompactar um arquivo, por exemplo, um diretório possui um arquivo compactado 'arquivo.txt.gz' para descompacta-lo, digite: gunzip arquivo.txt.gz + ENTER. Então, será criado um novo arquivo descompactado no diretório denominado: arquivo.txt.
+  Comando responsável por descompactar um arquivo, por exemplo, um diretório possui um arquivo compactado 'arquivo.txt.gz' para descompacta-lo, digite: gunzip arquivo.txt.gz + ENTER. Então, será criado um novo arquivo descompactado no diretório chamado: arquivo.txt.
   
   
 rm
@@ -242,7 +239,7 @@ rm
   
   -d, --directory
   
-  Remova diretórios, mesmo que eles não estão vazias. Disponível apenas para um usuário privilegiado.
+  Remova diretórios, mesmo que eles não estando vazios. Disponível apenas para um usuário privilegiado.
 
   -f, --force
   
@@ -266,7 +263,7 @@ rm
 
   -r, -R, --recursive
   
-  Se arquivo for um diretório, remover todo o diretório e todo o seu conteúdo, incluindo subdiretórios. Seja avisado: o uso desta opção pode ser perigoso.
+  Se arquivo for um diretório, remover todo o diretório e todo o seu conteúdo, incluindo subdiretórios. O uso desta opção pode ser perigoso.
 
   -v, --verbose
   
@@ -301,14 +298,14 @@ sort
   
   -u, --unique
   
-  Linhas idênticas no arquivo de entrada aparecer apenas uma vez na saída.
+  Linhas idênticas no arquivo de entrada aparecem apenas uma vez na saída.
   
   Exemplos:
 
   Listar os arquivos por número decrescente de linhas:
   wc -l * | sort -r
 
-  Alfabetizar uma lista de palavras, remova duplicatas, e imprimir a freqüência de cada palavra:
+  Alfabetizar uma lista de palavras, remova duplicatas, e imprimir a frequência de cada palavra:
   sort -fd wordlist | uniq -c
 
   Organizar o arquivo de senha numericamente pelo terceiro campo (ID do usuário):
