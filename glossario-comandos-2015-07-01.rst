@@ -79,7 +79,7 @@ hostname
 ifconfig
   Exibe as configurações de rede e de um adaptador Ethernet, detalhando as interfaces ativas no momento. Digite: ifconfig + ENTER;
  
-  É possível desativar é ativar uma interface, digitando, respectivamente: ifconfig eth0 + down + ENTER e ifconfig + up + ENTER.
+  É possível desativar é ativar uma interface, digitando, respectivamente: ifconfig eth0 down + ENTER e ifconfig up + ENTER.
 
 
 
@@ -95,6 +95,7 @@ lastb
 
 ls
   Comando responsável por listar os arquivos/diretórios do ficheiro atual, digite: ls + ENTER.
+  Para visualizar arquivos ocultus em um diretório, digite: ls -a + ENTER;
  
   Para visualizar arquivo ou diretório, tamanho, data e horário de modificação, nome do arquivo, entre outras informações, digite: ls -l + ENTER;
  
@@ -142,7 +143,7 @@ tty
 vim
  É um programa para editar texto, para entrar no editor, digite: vim + ENTER;
  
- Caso queira editar um arquivo do seu ficheiro, digite: vim + arquivo + ENTER;
+ Caso queira editar um arquivo do seu ficheiro, digite: vim arquivo + ENTER;
  
  Para começar a editar o arquivo, digite: a;
  
@@ -193,4 +194,44 @@ whoami
 
 write
   Permite enviar mensagens para outros usuários. Digite por exemplo: "Mensagem" | write nomedousuario + ENTER. 
+  
+ 
+ 
+Ctrl + L
+  Comando responsável por limpar a tela, posicionando o prompt no canto superior esquerdo, para isso, digite: ctrl + l.
+  
+  
+git
+  Comando reponsável por informar todos os comandos referentes ao GitHub no terminal. Para visualizar os comandos disponível, digite: git + ENTER.
+  
+ 
+ 
+ssh
+  É um programa que permite fazer login e executar comandos em uma máquina remoto. Para logar a uma máquina através de seu 'ip', por exemplo, digite: ssh seunome@ip.
+  
+  
+type
+  Comando usado para descobrir se o comando é arquivo binário interno ou externo, digite: type comando + ENTER;
+  
+  
+cp
+  Comando responsávelo por arquivos e diretórios. Por exemplo, você possui um arquivo chamado 'imagem1.jpg' e deseja duplicalo, basta digitar: cp imagem1.jpg imagem2.jpg + ENTER. Assim, será criada uma cópia chamada 'imagem2.jpg'.
+  Caso seja necessário duplicar uma arquivo para diretórios diferentes, digire: cp ~/Web/Historico/historico.txt ~/Web + ENTER. Nesse caso, o arquivo 'historico.txt', que está no diretório '/Web/Historico', será copiado para o diretório '/Web'.
+  Também é possível copiar, por exemplo, vários arquivos de uma mesma extensão, digite: cp ~/pictures/picture-*.jpg ~/picture-backup + ENTER. Nesse caso, todos os arquivos 'picture-' de extensão '.jpg' serão copiados de '/pictures' para '/picture-backup'.
+  
+  
+  
+wc -l
+  Com este comando é possível contar o número de linhas de um determinado arquivo, digite: wc -l arquivo + ENTER.
+  
+ 
+ 
+pstree
+  Comando responsável por mostrar a árvore de processos de um determinado usuário, digite: pstree nomeusuario + ENTER.
+  
+
+
+gunzip
+  Comando responsável por descompactar um arquivo, por exemplo, um diretório possui um arquivo compactado 'arquivo.txt.gz' para descompacta-lo, digite: gunzip arquivo.txt.gz + ENTER. Então, será criado um novo arquivo descompactado no diretório denominado: arquivo.txt.
+  
 
