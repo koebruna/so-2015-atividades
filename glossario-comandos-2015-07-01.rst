@@ -322,15 +322,17 @@ awk
   
   Cria um arquivo com argumentos concatenados no formato 'string + comando', a partir das informações de histórico armazenadas em outro arquivo.
   
-  awk '{print "Comando: " $2}' historico.txt | sort -u > historico2.txt 
+  awk '{print "Comando: " $2}' historico.txt | sort -u > historico2.txt  + ENTER.
   
   Utlizia o mesmo princípio anterior, no entanto, adicionando títulos as colunas de cada argumento.
   
-  awk 'BEGIN { printf "%-10s %s\n", "Name", "Number"
-
-  printf "%-10s %s\n", "----", "------" }
-
-  { printf "%-10s %s\n", $1, $2 }' historico.txt > historico2.txt
+  awk 'BEGIN {printf "%-10s %s\n", "Name", "Number" 
+  printf "%-10s %s\n", "----", "------"} 
+  {printf "%-10s %s\n", $1, $2}' historico.txt > historico2.txt + ENTER.
+  
+  
+id
+  Comando responsável por mostrar o identificador de usuário na máquina(UID) e o GID(Grupo), digite: id + ENTER.
   
   
 
