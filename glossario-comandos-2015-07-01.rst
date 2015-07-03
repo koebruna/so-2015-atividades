@@ -239,34 +239,45 @@ rm
   Comando responsável por excluir um ou mais arquivos.
   
   Argumentos:
+  
   -d, --directory
+  
   Remova diretórios, mesmo que eles não estão vazias. Disponível apenas para um usuário privilegiado.
 
   -f, --force
+  
   Remover arquivos protegidos contra gravação sem avisar.
 
   --help
+  
   Imprimir uma mensagem de ajuda e depois sai.
 
   -i, --interactive
+  
   Solicitar y (remover o arquivo) ou n (não remover o arquivo).
 
   -no-preserve-root
+  
   Não trate raiz (/) especialmente. Este é o padrão.
 
   --preserve-root
+  
   Não opere de forma recursiva na raiz (/).
 
   -r, -R, --recursive
+  
   Se arquivo for um diretório, remover todo o diretório e todo o seu conteúdo, incluindo subdiretórios. Seja avisado: o uso desta opção pode ser perigoso.
 
   -v, --verbose
+  
   O modo detalhado (imprimir o nome de cada arquivo antes de removê-lo).
 
   --version
+  
   Informação sobre a versão e depois sai.
 
   -
+  
   Marcar o fim de opções. Utilize esta opção quando você precisa fornecer um nome de arquivo que começa com -.
   
 
@@ -275,19 +286,24 @@ sort
   Comando reponsável por organizar linhas de comandos de arquivos.
   
   Argumentos:
+  
   -d, --dictionary-order
+  
   Classificar em ordem dicionário.
   
   -n
+  
   Classificar em ordem aritmética.
   
   -g, --general-numeric-sort
+  
   Classificar em ordem numérica geral.
   
   -u, --unique
+  
   Linhas idênticas no arquivo de entrada aparecer apenas uma vez na saída.
   
-  Exemplos
+  Exemplos:
 
   Listar os arquivos por número decrescente de linhas:
   wc -l * | sort -r
