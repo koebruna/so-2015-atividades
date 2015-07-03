@@ -327,7 +327,9 @@ awk
   Utlizia o mesmo princípio anterior, no entanto, adicionando títulos as colunas de cada argumento.
   
   awk 'BEGIN {printf "%-10s %s\n", "Name", "Number" 
+  
   printf "%-10s %s\n", "----", "------"} 
+  
   {printf "%-10s %s\n", $1, $2}' historico.txt > historico2.txt + ENTER.
   
   
